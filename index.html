@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes HD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            flex: 1;
+        }
+
+        main {
+            flex: 2;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px; /* Ajuste conforme necessário */
+        }
+
+        aside {
+            flex: 1;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .video-option {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .video-option:hover {
+            text-decoration: underline;
+        }
+
+        .rating-section {
+            margin-top: 20px;
+        }
+
+        .stars-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .star {
+            color: #ffd700; /* cor da estrela amarela */
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .comments-section {
+            margin-top: 20px;
+        }
+
+        .comment {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .comment .avatar {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Filmes Online HD Terror na Web</h1>
+    </header>
+    <main>
+        <!-- Substitua 'COLOQUE_SUA_URL_AQUI' pela URL do seu vídeo no YouTube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oO242exNQGs?si=tzet8OkTWfMEYXIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div class="rating-section">
+            <h2>Avaliação</h2>
+            <div class="stars-container">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9734;</span>
+                <span>(4.5 estrelas)</span>
+            </div>
+        </div>
+
+        <div class="comments-section">
+            <div class="comment">
+                <span class="avatar">J</span>
+                <strong>João</strong> - <span class="date">15/11/2023</span><br>
+                Ótimo vídeo! Recomendo.
+            </div>
+            <div class="comment">
+                <span class="avatar">M</span>
+                <strong>Maria</strong> - <span class="date">14/11/2023</span><br>
+                Muito interessante, adorei!
+            </div>
+            <div class="comment">
+                <span class="avatar">A</span>
+                <strong>Ana</strong> - <span class="date">13/11/2023</span><br>
+                Excelente surpresa, ansioso por mais!
+            </div>
+    </main>
+    <aside>
+        <h2>Outras Opções</h2>
+        <div class="video-option">
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/FgjqBjwhm7Q?si=G792Nx6k8ZIi7Pra" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="video-option" >
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/vVmSxvUc7HM?si=9528J_X_-Gbnzj8t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <!-- Adicione mais opções conforme necessário -->
+    </aside>
+
+    <script>
+        function changeVideo(videoUrl) {
+            document.getElementById('videoPlayer').src = videoUrl;
+        }
+    </script>
+</body>
+</html>
